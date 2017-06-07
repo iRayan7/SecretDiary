@@ -8,7 +8,7 @@
 
     if(isset($_SESSION['id'])){
         
-        include("con.php");
+        include("con.php"); // connection to database
         $query = "SELECT diary FROM users WHERE id = '".$_SESSION['id']."'";
         $row = mysqli_fetch_array(mysqli_query($link,$query));
         $diaryContent = $row['diary'];
