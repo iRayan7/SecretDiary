@@ -15,7 +15,7 @@
     $error = '';
     if(isset($_POST['submit'])){
         
-        include("con.php");
+        include("con.php"); // connection to database
         
         if(!$_POST['email']){
             $error .= "An email is required<br>";
